@@ -1,3 +1,7 @@
+import Kurtis from '../assets/img/kurtis.jpg'
+import Dresses from '../assets/img/dresses.jpg'
+import Joggers from '../assets/img/joggers.jpg'
+import Jeans from '../assets/img/joggers.jpg'
 const content = 
 {
     "categories":[
@@ -7,13 +11,18 @@ const content =
                 {
                     "title": "Hoodies & Sweatshirts",
                     "description": "Explore Now",
-                    "image": "./images/category-woman-hoodie.jpg"
+                     image: Kurtis
                 },
+            ]
+        },
+                {
+            "title": "categories for men",
+            "data": [
                 {
                     "title": "Hoodies & Sweatshirts",
                     "description": "Explore Now",
-                    "image": "./images/category-woman-hoodie.jpg"
-                }
+                     image: Joggers
+                },
             ]
         }
     ]
