@@ -8,14 +8,15 @@ import Kurtis from '../../../assets/img/kurtis.jpg'
 
 
 const Categories = ({ title , data , cat}) => (
-  <section> 
-    <h2>{title}</h2>
-    <div> 
+  <section className='flex flex-col w-auto px-6'> 
+    <h2 className='font-bold size-8 w-auto p-5'  >{title}</h2>
+    <div className='grid gap-4 p-4 w-1/5'> 
       {Array.isArray(data) && data.map((item, idx) => (
         <div key={idx} > 
           {/* Subsdtitua 'name' ou 'title' pela propriedade correta do seu objeto */}
           { item.title || 'title' }
           <img src={item.image}   />
+          { item.description || 'title' }
         </div>
       ))}
     </div>
